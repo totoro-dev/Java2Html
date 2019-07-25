@@ -23,7 +23,7 @@ public class ChangeFrame extends JFrame implements KeyListener{
 
 	private JTextArea javaArea = new JTextArea();
 	private JTextArea htmlArea = new JTextArea();
-	// 给代码框添加滚动�?
+	// 给代码框添加滚动条
 	private JScrollPane javaScroll = new JScrollPane(javaArea);
 	private JScrollPane htmlScroll = new JScrollPane(htmlArea);
 	private JPanel javaPanel = new JPanel();
@@ -46,10 +46,10 @@ public class ChangeFrame extends JFrame implements KeyListener{
 		javaPanel.setLayout(null);
 		htmlPanel.setLayout(null);
 		
-		// 代码框自动换�?
+		// 代码框自动换行
 		javaArea.setLineWrap(true);
 		htmlArea.setLineWrap(true);
-		// 滚动条一直显示，即使内容没有超过文本�?
+		// 滚动条一直显示，即使内容没有超过文本框
 		javaScroll.setVerticalScrollBarPolicy( JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		htmlScroll.setVerticalScrollBarPolicy( JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		
@@ -199,7 +199,7 @@ public class ChangeFrame extends JFrame implements KeyListener{
 		return false;
 	}
 
-	// 监控键盘是否使用粘贴功能，为1时按下ctrl键，�?2时，使用粘贴（ctrl+v�?
+	// 监控键盘是否使用粘贴功能，为1时按下ctrl键，为2时，使用粘贴（ctrl+v）
 	private int ctrl_v = 0;
 	
 	@Override
@@ -229,9 +229,9 @@ public class ChangeFrame extends JFrame implements KeyListener{
 	}
 	
 	/**
-	 * 整理粘贴的内容，以�?�配文本�?
-	 * 因为原始的文本框内，制表符的宽度太宽，代码排版相当丑�?
-	 * �?以需要对粘贴的内容进行制表符的处�?
+	 * 整理粘贴的内容，以适配代码框
+	 * 因为原始的文本框内，制表符的宽度太宽，代码排版相当丑陋
+	 * 所以需要对粘贴的内容进行制表符的处理
 	 * @param javaCode
 	 */
 	private void pick(String javaCode) {
@@ -241,7 +241,7 @@ public class ChangeFrame extends JFrame implements KeyListener{
 			String[] ts = line.split("\t");
 			for (String t : ts) {
 				if (t.length()==0) { // 当前字段为制表符"\t"
-					// 将制表符转化�?8个小空格，�?�过测试�?8个空格的排版较合�?
+					// 将制表符转化为8个小空格，经过测试8个空格的排版较适合
 					pick.append(t1+t1);
 				}else {
 					pick.append(t);
