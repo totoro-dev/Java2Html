@@ -1,24 +1,42 @@
 package totoro.top.java2html;
 
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * ä¸€äº›å¸¸é‡
+ * 
+ * @author é»„é¾™ä¸‰æ°´
+ *
+ * @since 1.0
+ */
 public class Constants {
-	// ´øÌØ¶¨CSSÑùÊ½µÄHTML±êÇ©£¬tips£º<nobr></nobr>ÎªÇ¿ÖÆ²»»»ĞĞ±êÇ©
-	
-	/* Java´úÂë¿é */
+	// pre ï¼šä»£ç å—
 	public static final String START_PRE = "<pre>";
 	public static final String END_PRE = "</pre>";
-	
-	/* Java¹Ø¼ü×Ö×ÏÉ«¼Ó´Ö */
-	public static final String START_NOBR_KEY_WORD= " <nobr class=\"key\">";
-	/* JavaÂÌÉ«×ÖÌå×¢ÊÍ */
-	public static final String START_NOBR_NOTE_GREEN= " <nobr class=\"note-green\">";
-	/* JavaÀ¶É«×ÖÌå×¢ÊÍ */
-	public static final String START_NOBR_NOTE_BLUE= " <nobr class=\"note-blue\">";
-	/* Java»ÒÉ«×¢½â */
-	public static final String START_NOBR_ANNOTATION= " <nobr class=\"anno\">";
-	/* JavaÀ¶É«×Ö·û´® */
-	public static final String START_NOBR_STRING= " <nobr class=\"string\">";
-	
-	public static final String END_NOBR = "</nobr>";
+	// å…³é”®å­—æ ·å¼
+	public static final String START_NOBR_KEY_WORD = "<nobr id=\"k\">";
+	// å…¨å±€å˜é‡æ ·å¼
+	public static final String START_NOBR_GLOBAL = "<nobr id=\"g\">";
+	// å±€éƒ¨å˜é‡æ ·å¼
+	public static final String START_NOBR_FIELD = "<nobr id=\"f\">";
+	// ç»¿è‰²æ³¨é‡Šæ ·å¼
+	public static final String START_NOBR_NOTE_GREEN = " <nobr id=\"n-g\">";
+	// è“è‰²æ³¨é‡Šæ ·å¼
+	public static final String START_NOBR_NOTE_BLUE = " <nobr id=\"n-b\">";
+	// æ³¨è§£æ ·å¼
+	public static final String START_NOBR_ANNOTATION = " <nobr id=\"a\">";
+	// å­—ç¬¦ä¸²æ ·å¼
+	public static final String START_NOBR_STRING = "<nobr id=\"s\">";
+	// åˆ¶è¡¨ç¬¦
+	public static final String TAB_CHARACTER = "&#9;";
+	// æ¢è¡Œç¬¦
 	public static final String BR = "<br>";
+	public static final String END_NOBR = "</nobr>";
 	
+	public static final boolean GLOBAL_HEIGH_LIGHT = true;
+	public static final boolean FIELD_HEIGH_LIGHT = true;
+	
+	public static final List<String> globals = new ArrayList<String>();
+	public static final List<String> fields = new ArrayList<String>();
 }
