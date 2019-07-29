@@ -1,5 +1,5 @@
 # Java2Html
-能将将格式化的Java代码转换成Html高亮显示模板的代码转换器<br>
+能将格式化的Java代码转换成Html高亮显示模板的代码转换器<br>
 
 # 代码转换器1.2版本更新<br>
 ## &emsp;1. JavaToHtml-1.2可运行程序&emsp;<a href="https://github.com/totoro-dev/Java2Html/releases/download/1.2/JavaToHtml-1.2.jar">点击下载</a><br>
