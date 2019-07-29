@@ -35,3 +35,7 @@
 ## Java代码编码规范<br>
 ### 1. 编码规范阅读&emsp;<a href="编码规范.txt">阅读规范</a><br>
 ### 2. 编码规范下载&emsp;<a href="https://github.com/totoro-dev/Java2Html/releases/download/1.2/CodingSpecification.txt">下载阅读</a><br>
+
+## HTML代码高亮测试实例<br>
+<a href="https://github.com/totoro-dev/Java2Html/releases/download/1.2/test.zip">下载测试实例</a><br>
+解压后直接用浏览器打开test.html即可查看效果
