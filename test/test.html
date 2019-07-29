@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="changer.css">
+	<title>JavaToHtml代码转换测试</title>
+</head>
+<body>
+<br><br><br>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-8 col-md-offset-2 column">
+		<pre><nobr id="k">package</nobr> totoro.top.java2html; <br>&#9;<br><nobr id="k">public</nobr> <nobr id="k">class</nobr> Test { <br>&#9;<br>&#9; <nobr id="n-g">// 主版本号</nobr><br>&#9;<nobr id="k">public static </nobr><nobr id="k">int</nobr> <nobr id="g">mainvVersion</nobr> = <nobr id="g">1</nobr>;<br>&#9; <nobr id="n-g">// 副版本号 ：测试全局变量高亮</nobr><br>&#9;<nobr id="k">private static </nobr><nobr id="k">double</nobr> <nobr id="g">testDefineGlobal</nobr> = <nobr id="g">0.2</nobr>;<br>&#9;<br>&#9;<nobr id="k">public static </nobr>void main(String[] <nobr id="f">args</nobr>) {<br>&#9;&#9; <nobr id="n-g">// 字符串高亮显示</nobr><br>&#9;&#9;testDefineMethod(<nobr id="g">mainvVersion</nobr>, <nobr id="s">"点击转换按钮生成HTML代码"</nobr>);<br>&#9;} <br>&#9;<br>&#9; <nobr id="n-b">/**</nobr><br>&#9; <nobr id="n-b"> * 蓝色注释内容</nobr><br>&#9; <nobr id="n-b"> * 测试方法定义的参数高亮</nobr><br>&#9; <nobr id="n-b"> */</nobr><br>&#9;<nobr id="k">private static </nobr><nobr id="k">boolean</nobr> testDefineMethod(<nobr id="k">double</nobr> <nobr id="f">ver</nobr>,  String <nobr id="f">log</nobr>) {<br>&#9;&#9; <nobr id="n-g">/* 测试局部变量高亮 ，并展示第二种绿色注释内容*/</nobr><br>&#9;&#9;<nobr id="k">double</nobr> <nobr id="f">version</nobr> = Test.<nobr id="g">mainvVersion</nobr> + <nobr id="g">testDefineGlobal</nobr>; <br>&#9;&#9;String <nobr id="f">testDefineField</nobr> = <nobr id="s">"测试"</nobr>+ <nobr id="f">version</nobr> + <nobr id="s">"版本 ："</nobr>;<br>&#9;&#9;System.out.println(<nobr id="f">testDefineField</nobr> + log); <br>&#9;&#9;<nobr id="k">return</nobr> <nobr id="k">true;</nobr> <br>&#9;} <br>&#9;<br>} <br></pre>
+		</div>
+	</div> 
+</div>
+
+</body>
+</html>
