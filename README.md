@@ -13,7 +13,7 @@
 &emsp;大量优化代码转换的细节<br>
 &emsp;转换后的HTML代码模板更贴近Java代码高亮<br>
 
-## 代码转换器1.2版本使用步骤<br>
+## 代码转换器1.2版本使用<br>
 ### 1. 代码编辑器中编写Java代码<br>
 <img src="img/1.2/JavaCode.webp"/><br>
 ### 2. 使用转换器生成Html模板代码<br>
