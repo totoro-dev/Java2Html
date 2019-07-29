@@ -1,4 +1,28 @@
 # Java2Html
-将Java代码转换成Html高亮模板代码<br>
-# 代码转换器1.0版本下载<br>
-<a href="https://github.com/totoro-dev/Java2Html/releases/download/1.0/JavaConverter1.0.jar">JavaConverter下载</a>
+能将将格式化的Java代码转换成Html高亮显示模板的代码转换器<br>
+
+# 代码转换器1.2版本更新<br>
+## &emsp;1. JavaToHtml-1.2可运行程序&emsp;<a href="https://github.com/totoro-dev/Java2Html/releases/download/1.2/JavaToHtml-1.2.jar">点击下载</a><br>
+## &emsp;2. 新增功能<br>
+&emsp;&emsp;&emsp;界面支持自适应布局<br>
+&emsp;&emsp;&emsp;添加全局变量高亮<br>
+&emsp;&emsp;&emsp;添加局部变量高亮<br>
+&emsp;&emsp;&emsp;添加构造器、方法定义的参数高亮<br>
+&emsp;&emsp;&emsp;添加字符串高亮<br>
+&emsp;&emsp;&emsp;优化注释高亮：在分别为"//xxx"和"/xxx/"样式注释添加两个绿色字体注释基础上，为"/*xxx/"添加蓝色字体注释。<br>
+&emsp;&emsp;&emsp;大量优化代码转换的细节<br>
+&emsp;&emsp;&emsp;转换后的HTML代码模板更贴近Java代码高亮<br>
+
+# 代码转换器1.2版本使用步骤<br>
+## &emsp;1. 代码编辑器中编写Java代码<br>
+<img src="img/1.2/JavaCode.webp"/><br>
+## &emsp;2. 使用转换器生成Html模板代码<br>
+<img src="img/1.2/Changer.webp"/><br>
+## &emsp;3. Html编辑器中粘贴生成的模板代码<br>
+<img src="img/1.2/HtmlCode.webp"/><br>
+## &emsp;4.浏览器查看Java代码高亮效果<br>
+<img src="img/1.2/Brower.webp"/><br>
+
+# Java代码编码规范<br>
+## &emsp;1. 编码规范阅读&emsp;<a href="编码规范.txt">阅读规范</a>
+## &emsp;2. 编码规范下载&emsp;<a href="https://github.com/totoro-dev/Java2Html/releases/download/1.2/CodingSpecification.txt">下载阅读</a>
