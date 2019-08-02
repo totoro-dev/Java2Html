@@ -1,21 +1,61 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="changer.css">
-	<title>JavaToHtml代码转换测试</title>
 </head>
-<body>
-<br><br><br>
-<div class="container">
-	<div class="row clearfix">
-		<div class="col-md-8 col-md-offset-2 column">
-		<pre><nobr id="k">package</nobr> totoro.top.java2html; <br>&#9;<br><nobr id="k">public</nobr> <nobr id="k">class</nobr> Test { <br>&#9;<br>&#9; <nobr id="n-g">// 主版本号</nobr><br>&#9;<nobr id="k">public static </nobr><nobr id="k">int</nobr> <nobr id="g">mainvVersion</nobr> = <nobr id="g">1</nobr>;<br>&#9; <nobr id="n-g">// 副版本号 ：测试全局变量高亮</nobr><br>&#9;<nobr id="k">private static </nobr><nobr id="k">double</nobr> <nobr id="g">testDefineGlobal</nobr> = <nobr id="g">0.2</nobr>;<br>&#9;<br>&#9;<nobr id="k">public static </nobr>void main(String[] <nobr id="f">args</nobr>) {<br>&#9;&#9; <nobr id="n-g">// 字符串高亮显示</nobr><br>&#9;&#9;testDefineMethod(<nobr id="g">mainvVersion</nobr>, <nobr id="s">"点击转换按钮生成HTML代码"</nobr>);<br>&#9;} <br>&#9;<br>&#9; <nobr id="n-b">/**</nobr><br>&#9; <nobr id="n-b"> * 蓝色注释内容</nobr><br>&#9; <nobr id="n-b"> * 测试方法定义的参数高亮</nobr><br>&#9; <nobr id="n-b"> */</nobr><br>&#9;<nobr id="k">private static </nobr><nobr id="k">boolean</nobr> testDefineMethod(<nobr id="k">double</nobr> <nobr id="f">ver</nobr>,  String <nobr id="f">log</nobr>) {<br>&#9;&#9; <nobr id="n-g">/* 测试局部变量高亮 ，并展示第二种绿色注释内容*/</nobr><br>&#9;&#9;<nobr id="k">double</nobr> <nobr id="f">version</nobr> = Test.<nobr id="g">mainvVersion</nobr> + <nobr id="g">testDefineGlobal</nobr>; <br>&#9;&#9;String <nobr id="f">testDefineField</nobr> = <nobr id="s">"测试"</nobr>+ <nobr id="f">version</nobr> + <nobr id="s">"版本 ："</nobr>;<br>&#9;&#9;System.out.println(<nobr id="f">testDefineField</nobr> + log); <br>&#9;&#9;<nobr id="k">return</nobr> <nobr id="k">true;</nobr> <br>&#9;} <br>&#9;<br>} <br></pre>
-		</div>
-	</div> 
-</div>
+<body><br><br>
+<div style="margin:0 auto;width:600px;">
+<style>
+#code_pre{border: 1px solid #d0d1d2;border-radius: 5px;background: #F5FFFA;margin: 10px;
+padding: 10px;font-size: 13px;font-family: courier,arial;overflow-y: hidden;}
+#k-p{color:#8B1C62;font-weight:bold;}
+#g-db{color: #0000FF;}
+#f-br{color: #8B5742;}
+#s-sb{color: #436EEE;}
+#nn-g{color: #3CB371;}
+#ni-b{color: #8470FF;}
+#anno{color: #828282;}
+</style>
+<pre id="code_pre"><nobr id="k-p">package</nobr> totoro.top.java2html; 
 
+<nobr id="k-p">import</nobr> java.util.HashMap; 
+<nobr id="k-p">import</nobr> java.util.Map; 
+
+<nobr id="nn-g">// 测试注解高亮</nobr>
+<nobr id="anno">@TestAnnotation</nobr>
+<nobr id="k-p">public</nobr> <nobr id="k-p">class</nobr> Test { 
+
+&#9;<nobr id="nn-g">/* 1. 测试全局变量高亮</nobr>
+&#9;<nobr id="nn-g"> * 2. 测试多行普通注释样式*/</nobr>
+&#9;<nobr id="k-p">public static int</nobr> <nobr id="g-db">mainvVersion</nobr> = 1;
+&#9;<nobr id="k-p">private static double</nobr> <nobr id="g-db">testDefineGlobal</nobr> = 0.2;
+
+&#9;<nobr id="k-p">public static void</nobr> main(String[] <nobr id="f-br">args</nobr>) {
+&#9;&#9;<nobr id="nn-g">// 测试字符串高亮</nobr>
+&#9;&#9;testDefineMethod(<nobr id="g-db">mainvVersion</nobr>, <nobr id="s-sb">"点击转换按钮生成HTML代码"</nobr>);
+&#9;} 
+
+&#9;<nobr id="ni-b">/**</nobr>
+&#9;<nobr id="ni-b"> * 1. 测试重要注释内容样式</nobr>
+&#9;<nobr id="ni-b"> * 2. 测试方法定义的参数高亮</nobr>
+&#9;<nobr id="ni-b"> */</nobr>
+&#9;<nobr id="k-p">private static boolean</nobr> testDefineMethod(<nobr id="k-p">double</nobr> <nobr id="f-br">ver</nobr>, String <nobr id="f-br">log</nobr>) {
+&#9;&#9;<nobr id="nn-g">/* 测试局部变量高亮 ，并使用第二种普通注释样式*/</nobr>
+&#9;&#9;<nobr id="k-p">double</nobr> <nobr id="f-br">version</nobr> = Test.<nobr id="g-db">mainvVersion</nobr> + <nobr id="g-db">testDefineGlobal</nobr>; 
+&#9;&#9;<nobr id="f-br">testDefineField</nobr> = <nobr id="s-sb">"测试"</nobr>+ <nobr id="f-br">version</nobr> + <nobr id="s-sb">"版本 ："</nobr>;
+&#9;&#9;System.out.println(<nobr id="f-br">testDefineField</nobr> + <nobr id="f-br">log</nobr>); 
+&#9;&#9;<nobr id="k-p">return</nobr> <nobr id="k-p">true;</nobr> 
+&#9;} 
+
+&#9;<nobr id="ni-b">/**</nobr>
+&#9;<nobr id="ni-b"> * 测试特殊符号</nobr>
+&#9;<nobr id="ni-b"> * 比如，"&lt;"和"&gt;"符号在HTML代码中的显示是特殊字符，需要做字符转化;</nobr>
+&#9;<nobr id="ni-b"> */</nobr>
+&#9;<nobr id="k-p">public </nobr>Map&lt;String, Object&gt; testGenericParadigm() {
+&#9;&#9;Map&lt;String, Object&gt; <nobr id="f-br">map</nobr> = <nobr id="k-p">new</nobr> HashMap&lt;&gt;(); 
+&#9;&#9;<nobr id="k-p">return</nobr> <nobr id="f-br">map</nobr>; <nobr id="nn-g">// 测试以注释结束的代码行</nobr>
+&#9;} 
+
+} 
+</pre>
+</div>
 </body>
 </html>

@@ -1,29 +1,78 @@
 	/* 关键字 */
-	#k{
+	#k-p{ /*紫色*/
 		color: #8B1C62;
 		font-weight:bold;
 	}
+	#k-r{ /*红色*/
+		color: #f83539;
+		font-weight:bold;
+	}
+	#k-o{ /*橘色*/
+		color: #f5b93d;
+		font-weight:bold;
+	}
 	/* 全局变量 */
-	#g{
+	#g-db{ /*深蓝*/
 		color: #0000FF;
 	}
-	/* 方局部变量 */
-	#f{
+	#g-br{ /*棕色*/
 		color: #8B5742;
 	}
+	#g-o{ /*橘色*/
+		color: #f5b93d;
+	}
+	/* 局部变量 */
+	#f-br{/*棕色*/
+		color: #8B5742;
+	}
+	#f-y{/*黄色*/
+		color: #fad957;
+	}
+	#f-o{/*橘色*/
+		color: #f5b93d;
+	}
 	/* 字符串 */
-	#s{
+	#s-sb{/*浅蓝*/
 		color: #436EEE;
 	}
-	/* 注解 */
-	#a{
-		color: #828282;
-	}
-	/* 绿色注释 */
-	#n-g{
+	#s-g{/*绿色*/
 		color: #3CB371;
 	}
-	/* 蓝色注释 */
-	#n-b{
+	#s-r{/*红色*/
+		color: #f83539;
+	}
+	/* 普通注释 */
+	#nn-g{/*绿色*/
+		color: #3CB371;
+	}
+	#nn-gr{/*灰色*/
+		color: #828282;
+	}
+	#nn-b{/*蓝色*/
 		color: #8470FF;
+	}
+	/* 重要注释 */
+	#ni-b{/*蓝色*/
+		color: #8470FF;
+	}
+	#ni-gr{/*灰色*/
+		color: #828282;
+	}
+	#ni-g{/*绿色*/
+		color: #3CB371;
+	}
+	/* 注解 */
+	#anno{
+		color: #828282;
+	}
+	/*pre标签样式*/
+	#code_pre{
+		border: 1px solid #d0d1d2;
+		border-radius: 5px;
+		background: #F5FFFA;
+		margin: 10px;
+		padding: 10px;
+		font-size: 13px;
+		font-family: courier,arial;
+		overflow-y: hidden;
 	}
